@@ -1,0 +1,79 @@
+:root{
+    --ms-primary-color: #001e43;
+    --ms-secondary-color: rgb(255, 153, 59);
+    --ms-light-color: #DFE3e4;
+    --ms-dark-color: #1b1b1b;
+
+    --ms-navbar-color: rgba(255, 153, 59, .6);
+    --ms-navbar-toggler-glow: #ff9936;
+    --ms-navbar-toggler-color: #ff9935;
+
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+.content{
+    flex: 1 0 auto;
+    margin-top: 4.47rem;
+}
+footer{
+    flex-shrink: 0;
+}
+
+.footer{
+    background: var(--ms-primary-color);
+    color: var(--ms-light-color);
+    font-size: 2rem;
+    padding-left: .5rem;
+}
+
+.socialIcons{
+    color: var(--ms-light-color);
+    font-size: 2rem;
+    padding-left: .5rem;
+}
+.socialIcons:hover{
+    color: var(--ms-secondary-color);
+}
+
+#mainNav{
+    background-color: var(--ms-primary-color);
+}
+
+#mainNav button{
+    border-color: var(--ms-secondary-color);
+}
+.navbar-toggler{
+    color: var(--ms-navbar-toggler-glow);
+}
+.navbar-toggler-icon-ms{
+    color: var(--ms-navbar-toggler-color);
+    font-size: 1.5rem;
+}
+
+
+
+/*---------navbar overrides end-----------*/
+.checkList{
+    list-style-type: none;
+}
+.chechList>li i{
+    color: var(--ms-secondary-color);
+    padding-right: .5rem;
+
+}
+
+.devIcons{
+    font-size: 4rem;
+    padding-left: .5rem;
+
+}
+
+.appLogo{
+    max-width: 350px;
+}
