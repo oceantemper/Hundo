@@ -77,3 +77,12 @@ footer{
 .appLogo{
     max-width: 350px;
 }
+
+.even{
+    font-weight: bolder;
+    
+}
+.add{
+    
+    font-weight: 100;
+}
