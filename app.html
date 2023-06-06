@@ -31,7 +31,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
           <a class="navbar-brand" href="/index.html">
-            <img src="" height="30" />&nbsp; Hundo</a
+            <img src="/img/HONDO_200.png" height="30" />&nbsp; Hundo</a
           >
           <button
             class="navbar-toggler"
@@ -74,64 +74,60 @@
     </header>
 
     <main class="content container">
-
-
-        <div class="row gy-2 h-100 row-cols-md-2 row-cols-1">
-          <div class="col border-2 border-end">
-            <div class="fw-bold lh-1 mb-3">
-              <p>
-                Enter a starting value and a ending value. press the bottom and
-                the values will appear
-              </p>
-            </div>
-            <div class="col">
-              <div>
-                <h5>Enter Values</h5>
-                <form action="" class="col gy-2 gx-3">
-                  <div class="col">
-                    <input
-                      id="startValue"
-                      type="text"
-                      class="form-control"
-                      placeholder="=Start Value"
-                      value="0"
-                      aria-label="Start Value" />
-                  </div>
-                  <div class="col">
-                    <input
-                      id="endValue"
-                      type="text"
-                      class="form-control"
-                      placeholder="End Value"
-                      value="100"
-                      aria-label="End Value" />
-                  </div>
-                  <div class="col-12 d-flex align-items-center justify-content-start justify-content-md-end">
-                    <button
-                      id="btnSubmit"
-                      type="button"
-                      class="btn btn-dark btn-lg">
-                      Display The Hundo
-                    </button>
-                  </div>
-                </form>
-
-                <!-- results template-->
-                <h2 class="mt-5 border-bottom border-2">Results</h2>
-                <div class="table-responsive">
-                  <table  class="table table-striped table-sm">
-                    <tbody id="results">
-                      <!--- results content here---->
-
-                    </tbody>
-
-                  </table>
+      <div class="row gy-2 h-100 row-cols-md-2 row-cols-1">
+        <div class="col border-2 border-end">
+          <div class="fw-bold lh-1 mb-3">
+            <p>
+              Enter a starting value and a ending value. press the bottom and
+              the values will appear
+            </p>
+          </div>
+          <div class="col">
+            <div>
+              <h5>Enter Values</h5>
+              <form action="" class="col gy-2 gx-3">
+                <div class="col">
+                  <input
+                    id="startValue"
+                    type="text"
+                    class="form-control"
+                    placeholder="=Start Value"
+                    value="0"
+                    aria-label="Start Value" />
                 </div>
+                <div class="col">
+                  <input
+                    id="endValue"
+                    type="text"
+                    class="form-control"
+                    placeholder="End Value"
+                    value="100"
+                    aria-label="End Value" />
+                </div>
+                <div
+                  class="col-12 d-flex align-items-center justify-content-start justify-content-md-end">
+                  <button
+                    id="btnSubmit"
+                    type="button"
+                    class="btn btn-dark btn-lg">
+                    Display The Hundo
+                  </button>
+                </div>
+              </form>
+
+              <!-- results template-->
+              <h2 class="mt-5 border-bottom border-2">Results</h2>
+              <div class="table-responsive">
+                <table class="table table-striped table-sm">
+                  <tbody id="results">
+                    <!--- results content here---->
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
-      </button>
+      </div>
     </main>
 
     <footer class="footer container-fluid py-3">
@@ -159,9 +155,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
-      document
-        .getElementById("btnSubmit")
-        .addEventListener("click", getValues);
+      document.getElementById("btnSubmit").addEventListener("click", getValues);
     </script>
   </body>
 </html>
